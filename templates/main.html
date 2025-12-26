@@ -1,0 +1,303 @@
+<!-- <!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دور على عربيتك</title>
+  <link rel="shortcut icon" type="image/png" href="one.png.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    nav {
+      background-color: #3e51b4;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    nav h1 {
+      margin: 0;
+      font-size: 2rem;
+      flex: 1;
+      text-align: center;
+    }
+
+    .contact {
+      position: relative;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .contact span {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      background: white;
+      color: #3e51b4;
+      padding: 5px 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: opacity 0.3s;
+      white-space: nowrap;
+    }
+    .contact:hover span {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #3e51b4, #5a6de0);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card h4 {
+      margin: 10px ;
+      font-size: 1rem;   
+      color: #3e51b4;      
+      text-decoration: none; 
+    }
+    .card a {
+      text-decoration: none; 
+      color: inherit;    
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>دور على عربيتك</h1>
+    <div class="contact">للتواصل
+      <span>📞 015555</span>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h2>ابحث عن سيارتك المثالية</h2>
+    <p>اختر من بين أفضل الفئات</p>
+  </section>
+
+  <div class="container">
+    <div class="card">
+      <a href="super.html" target="_blank">
+        <img src="ssuper.jpg" alt="Super car">
+        <h4>Super Cars</h4>
+      </a>
+    </div>
+    <div class="card">
+      <a href="mini.html" target="_blank">
+        <img src="mmini.jpg" alt="Hatchback car">
+        <h4>Hatchback Cars</h4>
+      </a>
+    </div>
+    <div class="card">
+      <a href="suv.html" target="_blank">
+        <img src="suv1.jpg" alt="SUV car">
+        <h4>SUV Cars</h4>
+      </a>
+    </div>
+    <div class="card">
+      <a href="seddan.html" target="_blank">
+        <img src="skodaaa.jpg" alt="Sedan car">
+        <h4>Sedan Cars</h4>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دور على عربيتك</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png"
+        href="{{ url_for('static', filename='images/one.png.png') }}">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    nav {
+      background-color: #3e51b4;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    nav h1 {
+      margin: 0;
+      font-size: 2rem;
+      flex: 1;
+      text-align: center;
+    }
+
+    .contact {
+      position: relative;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .contact span {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      background: white;
+      color: #3e51b4;
+      padding: 5px 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: opacity 0.3s;
+      white-space: nowrap;
+    }
+    .contact:hover span {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #3e51b4, #5a6de0);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card h4 {
+      margin: 10px;
+      font-size: 1rem;
+      color: #3e51b4;
+    }
+    .card a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h1>دور على عربيتك</h1>
+    <div class="contact">للتواصل
+      <span>📞 015555</span>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h2>ابحث عن سيارتك المثالية</h2>
+    <p>اختر من بين أفضل الفئات</p>
+  </section>
+
+  <div class="container">
+
+    <!-- Super -->
+    <div class="card">
+      <a href="/super">
+        <img src="{{ url_for('static', filename='images/ssuper.jpg') }}" alt="Super car">
+        <h4>Super Cars</h4>
+      </a>
+    </div>
+
+    <!-- Mini -->
+    <div class="card">
+      <a href="/mini">
+        <img src="{{ url_for('static', filename='images/mmini.jpg') }}" alt="Mini car">
+        <h4>Hatchback Cars</h4>
+      </a>
+    </div>
+
+    <!-- SUV -->
+    <div class="card">
+      <a href="/suv">
+        <img src="{{ url_for('static', filename='images/suv1.jpg') }}" alt="SUV car">
+        <h4>SUV Cars</h4>
+      </a>
+    </div>
+
+    <!-- Sedan -->
+    <div class="card">
+      <a href="/seddan">
+        <img src="{{ url_for('static', filename='images/skodaaa.jpg') }}" alt="Sedan car">
+        <h4>Sedan Cars</h4>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>

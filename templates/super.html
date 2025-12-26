@@ -1,0 +1,318 @@
+<!-- <!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دور على عربيتك</title>
+  <link rel="shortcut icon" type="image/png" href="one.png.png">
+  <style>
+    body {
+      background-color: #E6EDF5;
+      font-family: Arial, sans-serif;
+    }
+    div {
+      height: 85px;
+      background: linear-gradient(to bottom, #3e51b4 100%, #ffffff 30%);
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding:20px;
+
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: #3e51b4;
+      color: white;
+    }
+    td img {
+      display: block;
+      margin: 0 auto;
+    }
+    .home-link { 
+      display: block;
+      text-align: center; 
+      margin-top: 20px; 
+    } 
+    .home-link img { 
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>دور على عربيتك</h1>
+  </div>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Specs</th>
+      <th>Price</th>
+      <th>Photo</th>
+    </tr>
+    <tr>
+      <td>Bmw m4 coupe 2024</td>
+      <td>500-hp 3.0L V6 twin-turbo</td>
+      <td>5,700,000</td>
+      <td><img src="{{ url_for('static', filename='images/Bmw m4 coupe.png') }}" alt="Bmw m4 coupe car" width="220" height="100"></td>
+    </tr>
+    <tr>
+      <td>Bmw series 8 coupe 2024</td>
+      <td>530-hp 4.4L V8 twin-turbo</td>
+      <td>9,000,000</td>
+      <td><img src="{{ url_for('static', filename='images/Bmw 8series coupe.png') }}" alt="Bmw 8series coupe car" width="220" height="110"></td>
+    </tr>
+    <tr>
+      <td>Lotus emira 2024</td>
+      <td>400-hp 3.5L V6 SuperCharged</td>
+      <td>3,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Lotus emira.png') }}" alt="Lotus emira car" width="210" height="100"></td>
+    </tr>
+    <tr>
+      <td>Dodge charger 2024</td>
+      <td>418-hp 6.4L V8 twin-turbo</td>
+      <td>4,000,000</td>
+      <td><img src="{{ url_for('static', filename='images/Dodge charger.png') }}" alt="Dodge charger car" width="210" height="110"></td>
+    </tr>
+    <tr>
+      <td>Dodge challenger 2024</td>
+      <td>372-hp 5.7L V8 twin-turbo</td>
+      <td>4,650,000</td>
+      <td><img src="{{ url_for('static', filename='images/Dodge challenger.png') }}" alt="Dodge challenger car" width="220" height="120"></td>
+    </tr>
+    <tr>
+      <td>Maserati ghibli 2024</td>
+      <td>345-hp 3.0L V6 twin-turbo</td>
+      <td>2,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Maserati_ghibliii.png') }}" alt="Maserati ghibli car" width="210" height="110"></td>
+    </tr>
+    <tr>
+      <td>Maserati quattroporte 2024</td>
+      <td>410-hp 3.0L V6 twin-turbo</td>
+      <td>3,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Maserati quattroporte.png') }}" alt="Maserati quattroporte car" width="230" height="120"></td>
+    </tr>
+    <tr>
+      <td>Porsche 718 2024</td>
+      <td>400-hp 4-Cyl 2.0L V6 Turbo</td>
+      <td>4,000,000</td>
+      <td><img src="{{ url_for('static', filename='images/Porsche 718.png') }}" alt="Porsche 718 car" width="220" height="120"></td>
+    </tr>
+    <tr>
+      <td>Porsche 911 turbo s 2024</td>
+      <td>650-hp 3.8L V6 twin-turbo</td>
+      <td>6,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Porsche 911.png') }}" alt="Porsche 911 turbo s car" width="240" height="120"></td>
+    </tr>
+    <tr>
+      <td>Aston martin vantage roadster 2024</td>
+      <td>500-hp 4.0L V8 8AT</td>
+      <td>4,750,000</td>
+      <td><img src="{{ url_for('static', filename='images/Aston martin vantage roadster.png') }}"
+       alt="Aston martin vantage roadster car" width="230" height="120"></td>
+    </tr>
+    <tr>
+      <td>Ferrari f12 2024</td>
+      <td>730-hp 6.3L V12</td>
+      <td>13,000,000</td>
+      <td><img src="{{ url_for('static', filename='images/Ferrari f12.png') }}" alt="Ferrari f12 car" width="220" height="120"></td>
+    </tr>
+  </table>
+
+    <a href="{{ url_for('home') }}">
+    <img src="{{ url_for('static', filename='images/455.jpg') }}"alt="HOME page" width="50" height="50" align="center">
+    </a>
+
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دور على عربيتك</title>
+
+  <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/one.png.png') }}">
+
+  <style>
+    body {
+      background-color: #E6EDF5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      height: 85px;
+      background: linear-gradient(to bottom, #3e51b4 100%, #ffffff 30%);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: white;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #3e51b4;
+      color: white;
+    }
+
+    td img {
+      display: block;
+      margin: auto;
+    }
+
+    /* HOME BUTTON */
+    .home-link {
+      display: block;
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .home-link img {
+      width: 50px;
+      height: 50px;
+      border-radius: 25%;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .home-link img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>دور على عربيتك</h1>
+  </div>
+
+  <!-- TABLE -->
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Specs</th>
+      <th>Price</th>
+      <th>Photo</th>
+    </tr>
+
+    <tr>
+      <td>Bmw m4 coupe 2024</td>
+      <td>500-hp 3.0L V6 twin-turbo</td>
+      <td>5,700,000</td>
+      <td><img src="{{ url_for('static', filename='images/Bmw m4 coupe.png') }}" width="220" height="100"></td>
+    </tr>
+
+    <tr>
+      <td>Bmw series 8 coupe 2024</td>
+      <td>530-hp 4.4L V8 twin-turbo</td>
+      <td>9,000,000</td>
+      <td><img src="{{ url_for('static', filename='images/Bmw 8series coupe.png') }}" width="220" height="110"></td>
+    </tr>
+
+    <tr>
+      <td>Lotus emira 2024</td>
+      <td>400-hp 3.5L V6 SuperCharged</td>
+      <td>3,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Lotus emira.png') }}" width="210" height="100"></td>
+    </tr>
+
+    <tr>
+      <td>Dodge charger 2024</td>
+      <td>418-hp 6.4L V8</td>
+      <td>4,000,000</td>
+      <td><img src="{{ url_for('static', filename='images/Dodge charger.png') }}" width="210" height="110"></td>
+    </tr>
+
+    <tr>
+      <td>Dodge challenger 2024</td>
+      <td>372-hp 5.7L V8</td>
+      <td>4,650,000</td>
+      <td><img src="{{ url_for('static', filename='images/Dodge challenger.png') }}" width="220" height="120"></td>
+    </tr>
+
+    <tr>
+      <td>Maserati ghibli 2024</td>
+      <td>345-hp 3.0L V6</td>
+      <td>2,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Maserati_ghibliii.png') }}" width="210" height="110"></td>
+    </tr>
+
+    <tr>
+      <td>Maserati quattroporte 2024</td>
+      <td>410-hp 3.0L V6</td>
+      <td>3,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Maserati quattroporte.png') }}" width="230" height="120"></td>
+    </tr>
+
+    <tr>
+      <td>Porsche 718 2024</td>
+      <td>400-hp 2.0L Turbo</td>
+      <td>4,000,000</td>
+      <td><img src="{{ url_for('static', filename='images/Porsche 718.png') }}" width="220" height="120"></td>
+    </tr>
+
+    <tr>
+      <td>Porsche 911 turbo s 2024</td>
+      <td>650-hp 3.8L</td>
+      <td>6,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Porsche 911.png') }}" width="240" height="120"></td>
+    </tr>
+
+    <tr>
+      <td>Aston martin vantage roadster 2024</td>
+      <td>500-hp 4.0L V8</td>
+      <td>4,750,000</td>
+      <td><img src="{{ url_for('static', filename='images/Aston martin vantage roadster.png') }}" width="230" height="120"></td>
+    </tr>
+
+    <tr>
+      <td>Ferrari f12 2024</td>
+      <td>730-hp 6.3L V12</td>
+      <td>13,000,000</td>
+      <td><img src="{{ url_for('static', filename='images/Ferrari f12.png') }}" width="220" height="120"></td>
+    </tr>
+  </table>
+
+  <!-- HOME BUTTON -->
+  <div class="home-link">
+    <a href="{{ url_for('main') }}">
+      <img src="{{ url_for('static', filename='images/455.jpg') }}" alt="Home">
+    </a>
+  </div>
+
+</body>
+</html>

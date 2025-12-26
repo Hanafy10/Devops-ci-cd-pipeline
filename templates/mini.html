@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دور على عربيتك</title>
+  <link rel="shortcut icon" type="image/png" href="one.png.png">
+
+  <style>
+    body {
+      background-color: #E6EDF5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .container {
+      height: 85px;
+      background: linear-gradient(to bottom, #3e51b4 100%, #ffffff 30%);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #3e51b4;
+      color: white;
+    }
+
+    td img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .home-link {
+      display: block;
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .home-link img {
+      width: 50px;
+      height: 50px;
+      border-radius: 25%;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .home-link img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>دور على عربيتك</h1>
+  </div>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Specs</th>
+      <th>Price</th>
+      <th>Photo</th>
+    </tr>
+
+    <tr>
+      <td>Suzuki Swift 2024</td>
+      <td>85-hp 1200cc</td>
+      <td>600,000</td>
+      <td><img src="{{ url_for('static', filename='images/Suzuki-Swift.png') }}" width="210" height="120"></td>
+    </tr>
+
+    <tr>
+      <td>Volkswagen Golf 2024</td>
+      <td>350-hp 2.0L 4-Cyl Turbo</td>
+      <td>1,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Volkswagen golf.png') }}" width="210" height="100"></td>
+    </tr>
+
+    <tr>
+      <td>Hyundai i10 2024</td>
+      <td>85-hp 1000cc</td>
+      <td>650,000</td>
+      <td><img src="{{ url_for('static', filename='images/Hyundai  i10.png') }}" width="200" height="110"></td>
+    </tr>
+
+    <tr>
+      <td>Skoda Fabia 2024</td>
+      <td>110-hp 1.2L TSI</td>
+      <td>1,600,000</td>
+      <td><img src="{{ url_for('static', filename='images/Skoda fabia.png') }}" width="200" height="120"></td>
+    </tr>
+
+    <tr>
+      <td>Seat Ibiza 2024</td>
+      <td>115-hp 1600cc</td>
+      <td>1,200,000</td>
+      <td><img src="{{ url_for('static', filename='images/Seat ibiza.png') }}" width="200" height="120"></td>
+    </tr>
+
+    <tr>
+      <td>Seat Leon 2024</td>
+      <td>150-hp 1400cc Turbo</td>
+      <td>1,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Seat Leon.png') }}" width="190" height="110"></td>
+    </tr>
+
+    <tr>
+      <td>Mercedes A250 2024</td>
+      <td>220-hp 2.0L Turbo 7G-DCT</td>
+      <td>2,500,000</td>
+      <td><img src="{{ url_for('static', filename='images/Mercedes A250.png') }}" width="230" height="140"></td>
+    </tr>
+
+    <tr>
+      <td>BMW 118 2024</td>
+      <td>140-hp 1500cc Turbo</td>
+      <td>1,650,000</td>
+      <td><img src="{{ url_for('static', filename='images/Bmw118.png') }}" width="220" height="110"></td>
+    </tr>
+
+    <tr>
+      <td>Toyota Corolla Hatchback 2024</td>
+      <td>2.0L Inline-4</td>
+      <td>750,000</td>
+      <td><img src="{{ url_for('static', filename='images/Toyota corolla hatchbak.png') }}" width="220" height="120"></td>
+    </tr>
+
+    <tr>
+      <td>Opel Corsa 2024</td>
+      <td>130-hp 1200cc Turbo</td>
+      <td>1,000,000</td>
+      <td><img src="{{ url_for('static', filename='images/Opel corsa.png') }}" width="200" height="110"></td>
+    </tr>
+
+    <tr>
+      <td>Fiat 500 2024</td>
+      <td>100-hp 1400cc</td>
+      <td>900,000</td>
+      <td><img src="{{ url_for('static', filename='images/Fait 500.png') }}" width="220" height="110"></td>
+    </tr>
+
+    <tr>
+      <td>Fiat Tipo Hatchback 2024</td>
+      <td>110-hp 1600cc</td>
+      <td>850,000</td>
+      <td><img src="{{ url_for('static', filename='images/Fait_tipo_hatchback.png') }}" width="215" height="110"></td>
+    </tr>
+  </table>
+
+  <div class="home-link">
+    <a href="{{ url_for('main') }}">
+      <img src="{{ url_for('static', filename='images/455.jpg') }}" alt="Home">
+    </a>
+  </div>
+
+
+</body>
+</html>

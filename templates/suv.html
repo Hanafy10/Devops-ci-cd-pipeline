@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+<title> دور على عربيتك </title>
+<link rel="shortcut icon" type="image" href="one.png.png">
+</head>
+<style>   
+  div {
+    height: 85px;
+   background: linear-gradient(to bottom, #3e51b4 100%, #ffffff 30%)
+    }
+    table, th, td {
+      border:1px solid black;
+      text-align:center;
+    } 
+    </style> 
+    <body style="background-color:#E6EDF5;">    
+    <div class="container"style="text-align:center;"  >   
+    <hr>    
+    <h1 style="font-size: 2rem; color: white ; text-align:center; ">دور على عربيتك&nbsp;&nbsp;</h1>   
+    <hr>    
+    <table style="width:100%" height="20%" >    
+    <tr>
+     <td>Name</td>
+     <td>specs</td>
+     <td>Price</td>
+     <td>Photo</td>
+    </tr>
+
+    <tr>
+      <td>Volvo xc90 2024 </td>
+      <td>2.0-litre four-cylinder</td>
+      <td>4,200,000</td>
+      <td><img src="{{ url_for('static', filename='images/volvo xc90.png') }}" alt="Volvo xc90 car" width="200" height="110" align="center"></td>
+    </tr>
+    <tr>
+      <td>Hyundai creta 2024 </td>
+      <td>113-hp 1500cc 4-cylinder</td>
+      <td>5,750,000</td>
+      <td><img src="{{ url_for('static', filename='images/Hyundai creta.png') }}"" alt="Hyundai creta car" width="230" height="140" align="center"></td>
+    </tr>
+    <tr> 
+     <td>Hyundi tucson 2024 </td>
+     <td>180-hp 1600cc turbo</td>
+     <td>2,250,000</td>
+     <td><img src="{{ url_for('static', filename='images/tucson 1.png') }}" alt="Hyundi tucson car" width="230" height="150" align="center"></td>
+    </tr>
+    <tr>
+     <td>Volkswagen Tiguan 2024 </td>
+     <td>150-hp 1400cc turbo </td>
+     <td>2,300,000</td>
+     <td><img src="{{ url_for('static', filename='images/Tiguann.png') }}" alt="Volkswagen Tiguan car" width="250" height="140" align="center"></td>
+    </tr>
+    <tr>
+     <td>kia sportage 2024 </td>
+     <td>180-hp 1600cc turbo</td>
+     <td>1,850,000</td>
+     <td><img src="{{ url_for('static', filename='images/kia_sportage1.png') }}" alt="kia sportage car" width="190" height="140" align="center"></td>
+    </tr>
+    <tr>
+     <td>Seat tarraco 2024 </td>
+     <td>150-hp 1400cc turbo </td>
+     <td>1,900,000</td>
+     <td><img src="{{ url_for('static', filename='images/Seat tarracoo.png') }}" alt="Seat tarraco car" width="220" height="120" align="center"></td>
+    </tr>
+    <tr>
+     <td>Audi q3 2024 </td>
+     <td>150-hp 1400cc turbo <br> 190-hp 2000cc turbo </td>
+     <td>1,700,000 <br> 2,000,000</td>
+     <td><img src="{{ url_for('static', filename='images/Audii q3.png') }}" alt="Audi q3 car" width="230" height="120" align="center"></td>
+    </tr>
+    <tr>
+      <td>Nissan juke 2024 </td>
+      <td>115-hp 1000cc turbo</td>
+      <td>1,450,000</td>
+      <td><img src="{{ url_for('static', filename='images/Nissan juke.png') }}" alt="Nissan juke car" width="250" height="130" align="center"></td>
+    </tr>
+    <tr>
+      <td>Nissan Qashqai 2024 </td>
+      <td>148-hp 1300cc turbo</td>
+      <td>1,600,000</td>
+      <td><img src="{{ url_for('static', filename='images/Qashqai 1.png') }}" alt="nissan Qashqai car" width="225" height="140" align="center"></td>
+    </tr>
+    <tr>
+      <td>Renault duster 2024 </td>
+      <td>115-hp 1.6-liter </td>
+      <td>1,200,000</td>
+      <td><img src="{{ url_for('static', filename='images/Renault duster.png') }}" alt="Renault duster car" width="230" height="140" align="center"></td>
+    </tr>
+    <tr>
+      <td>Renault austral 2024 </td>
+      <td>160-hp 1300cc turbo </td>
+      <td>1,750,000</td>
+      <td><img src="{{ url_for('static', filename='images/Renault austral.png') }}" alt="Renault austral car" width="205" height="120" align="center"></td>
+    </tr>
+
+    </table>
+    <br>
+
+<a href="{{ url_for('main') }}" style="display:block; text-align:center;">
+  <img src="{{ url_for('static', filename='images/455.jpg') }}"
+       alt="HOME page"
+       width="50"
+       height="50"
+       style="border-radius:25%; display:inline-block; margin:15px auto 20px;">
+</a>
+
+
+    
+    </div> 
+    </body>
+    </html>
+
+
