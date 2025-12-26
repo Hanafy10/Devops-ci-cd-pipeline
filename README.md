@@ -14,5 +14,5 @@ Pipeline Steps
 
 Run Locally
 ```bash
-docker build -t flask-app .
-docker run -p 8080:8080 flask-app
+docker build -t ci-app .
+docker run -p 8080:8080 ci-app
